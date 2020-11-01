@@ -156,3 +156,22 @@ tr:nth-child(even) {
     padding-bottom: 50px;
     font-size: 1.5rem;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+table {
+    margin-top: 50px;
+    text-align: center;
+    background: rgb(245, 57, 57);
+    color: #fff;
+}
+
+#show th, #show td {
+    padding: 13px;
+}
+
+#btna td input {
+    width: 100%;
+}

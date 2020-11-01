@@ -91,12 +91,12 @@
     </div>
     <form action="/logindata" method="POST">
         <div class="form" style="padding-top: 1rem; padding-bottom: 1.5rem;">
-            <img src="../Assets/blood-drop.png" alt="">
+            <img src="blood-drop.png" alt="">
             <label for="username" id="inputuser">Username</label>
-            <input type="text" placeholder="Username" id="username" required>
+                <input type="text" placeholder="Username" id="username" name="username" required>
             <label for="password" id="inputpassword">Password</label>
-            <input type="password" placeholder="Password" id="password" required>
-            <button type="button" class="btn btn-lg">Submit</button></a>
+                <input type="password" placeholder="Password" id="password" name="password" required>
+            <button type="submit" class="btn btn-lg">Submit</button></a>
         </div>
     </form>
 
@@ -111,9 +111,12 @@
     </footer>
     <script>
         var e = '<%= x %>';
-        if (!e) {
+        if (!e) 
+        {
             console.log('null')
-        } else {
+        } 
+        else 
+        {
             document.getElementById('test').innerHTML = e;
             // alert('Username or password fault')
             console.log(e);
