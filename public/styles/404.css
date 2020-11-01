@@ -17,9 +17,30 @@ hr{
 }
 
 .my-navbar{
-    background-color: white
+    background-color: white;
+    animation-name: onLoad;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
-
+@keyframes onLoad {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        background-color: rgba(248, 80, 50, 1);
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+    }
+}
 .my-navbar a, .my-navbar li{
     color: black;
     padding-left: 1.5rem;
@@ -33,7 +54,7 @@ hr{
 
 .my-navbar li:hover {
     color: white;
-    
+
 }
 
 .collapse a:hover {
